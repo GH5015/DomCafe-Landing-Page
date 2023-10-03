@@ -1,0 +1,1297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    position: fixed;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    color: aliceblue;
+    border-bottom: 2px solid;
+    z-index: 1000000;
+    background-color: rgba(0, 0, 0, 0.733);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+header img{
+    height: 60px;
+    width: 60px;
+}
+.logo{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.logo span{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 800;
+}
+.menu{
+    margin-left: 700px;
+    margin-top: 35px;
+}
+.menu span{
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.menu span:hover{
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+.inicio{
+    background-image: url("images/background-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 99vh;
+}
+.title{
+    padding-top: 255px;
+    padding-left: 240px;
+    padding-bottom: 142px;
+    color: aliceblue;
+    backdrop-filter: blur(5px) saturate(150%);
+}
+.title h1{
+    font-size: 86px;
+    font-weight: 800;
+    text-shadow: 1px 1px black;
+    border-bottom: 8px solid black;
+    border-bottom-right-radius: 10%;
+    margin-right: 700px;
+}
+.title h3{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px white;
+}
+.about{
+    border-top: 8px solid ;
+    background-color: rgb(255, 253, 208);
+    padding-bottom: 70px;
+}
+.about h1{
+    font-size: 40px;
+    border-bottom: 8px solid;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-right: 1020px;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+.about p{
+    margin-left: 50px;
+    margin-top: 40px;
+    width: 700px;
+    font-size: 18px;
+}
+.about img{
+    width: 450px;
+    height: 550px;
+    display: flex;
+    margin-top: -450px;
+    margin-left: 830px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.733);
+}
+.products{
+    border-top: 8px solid;
+    padding-bottom: 140px;
+    background-color: rgb(107,52,31);
+}
+.products h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 8px solid black;
+    padding-bottom: 10px;
+    margin-top: 70px;
+    margin-left: 450px;
+    margin-right: 450px;
+    color: aliceblue;
+}
+.produtos{
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: flex;
+}
+.produto{
+    width: 300px;
+    transition: 0.3s ease;
+    margin-right: 120px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.produto:hover{
+    scale: 1.1;
+}
+.produto h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 1px 1px black;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.produto img{
+    width: 295px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+}
+.produto button{
+    padding: 10px;
+    width: 140px;
+    border-radius: 15px;
+    background-color: transparent;
+    font-weight: 800;
+    font-size: 14px;
+    border: 2px solid;
+    margin-left: 82px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.produto button:hover{
+    text-decoration: underline;
+}
+.descrição{
+    margin-top: 40px;
+    background-color: rgb(255, 253, 208);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid;
+    border-top: none;
+    display: none;
+    opacity: 0;
+    height: 0px;
+}
+.animation{
+    animation: p 0.3s ease;
+    opacity: 1;
+    height: 380px;
+}
+
+@keyframes p{
+    from{
+        opacity: 0;
+        height: 0px;
+    }
+    to{
+        opacity: 1;
+        height: 380px;
+    }
+}
+.descrição p{
+    padding: 20px;
+}
+.contact{
+    border-top: 8px solid;
+    background-color: rgb(255, 253, 208);
+    padding-bottom: 160px;
+}
+.contact img{
+    width: 98.75vw;
+    height: 88vh;
+}
+.contact h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 8px solid black;
+    padding-bottom: 10px;
+    margin-top: 70px;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.contact p{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 17px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: 80px;
+}
+.contact h2{
+    border-bottom: 4px solid;
+    margin-right: 665px;
+}
+.contact input{
+    background-color: transparent;
+    font-size: 17px;
+    justify-content: center;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+.contact button{
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: rgb(107,52,31);
+    cursor: pointer;
+    margin-left: 630px;
+    color: aliceblue;
+    margin-top: 30px;
+    transition: 0.2s ease;
+}
+.contact button:hover{
+    background-color: rgb(153, 77, 46);
+    box-shadow: 0px 0px 5px 0px black;
+    scale: 1.02;
+}
+footer{
+    background-color: rgb(23, 25, 27);
+    color: aliceblue;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.img img{
+    margin-left: 615px;
+    margin-top: -75px;
+    position: absolute;
+    z-index: 100000;
+    border-radius: 60%;
+}
+.footer{
+    display: flex;
+}
+.adress{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+.adress h4{
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.adress p{
+    margin-top: 7px;
+}
+.time h4{
+    margin-bottom: 10px;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    margin-left: 60px;
+    margin-top: 130px;
+    border-right: 2px solid;
+}
+.time p{
+    margin-top: 7px;
+}
+.footer2{
+    display: flex;
+}
+.social{
+    width: 310px;
+    margin-top: -153px;
+    margin-left: 750px;
+}
+.social h4{
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.social img:hover{
+    background-color: aliceblue;
+    scale: 1.1;
+}
+.icon{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.navegue{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin-top: -130px;
+    margin-left: 1150px;
+}
+.navegue h4{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.navegue p{
+    margin-top: 7px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.navegue p:hover{
+    font-weight: 900;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+.dedi{
+    text-align: center;
+    margin-top: 70px;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width:1200px){
+    .menu{
+        margin-left: 400px;
+    }
+    .title{
+        padding-top: 255px;
+        padding-left: 190px;
+        padding-bottom: 142px;
+    }
+    .title h1{
+        margin-right: 500px;
+    }
+    .about{
+        padding-bottom: 40px;
+    }
+    .about h1{
+        margin-right: 830px;
+    }
+    .about p{
+        width: 600px;
+    }
+    .about img{
+        width: 380px;
+        height: 480px;
+        margin-left: 680px; 
+    }
+    .products h1{
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .products{
+        padding-bottom: 80px;
+    }
+    .produtos{
+        margin-top: 100px;
+        margin-left: 60px;
+        margin-right: 60px;
+        display: flex;
+    }
+    .produto{
+        width: 300px;
+        margin-right: 60px;
+    }
+    .contact img{
+        width: 98.29vw;
+    }
+    .contact button{
+        margin-left: 480px;
+    }
+    .contact h1{
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .contact form{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        margin-left: 180px;
+        margin-right: 180px;
+        margin-top: 80px;
+    }
+    .contact h2{
+        border-bottom: 4px solid;
+        margin-right: 550px;
+    }
+    .img img{
+        margin-left: 465px;
+        margin-top: -75px;
+    }
+    .adress{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-left: 80px;
+        margin-top: 100px;
+    }
+    .time{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-left: 60px;
+        margin-top: 130px;
+        padding-right: 20px;
+        border-right: 2px solid;
+    }
+    .social{
+        width: 240px;
+        margin-top: -153px;
+        margin-left: 590px;
+    }
+    .social img{
+        width: 40px;
+        margin-bottom: 5px;
+        height: 40px;
+        margin-right: 15px;
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .navegue{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        margin-top: -130px;
+        margin-left: 900px;
+    }
+}
+
+@media (max-width:1050px){
+    .menu{
+        margin-left: 380px;
+    }
+    .title{
+        padding-top: 255px;
+        padding-left: 190px;
+        padding-bottom: 142px;
+    }
+    .title h1{
+        margin-right: 430px;
+    }
+    .about{
+        padding-bottom: 40px;
+    }
+    .about h1{
+        margin-right: 760px;
+    }
+    .about p{
+        width: 600px;
+    }
+    .about img{
+        width: 330px;
+        height: 460px;
+        margin-left: 680px; 
+    }
+    .products h1{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    .products{
+        padding-bottom: 80px;
+    }
+    .produtos{
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+    }
+    .produto{
+        width: 250px;
+        margin-right: 80px;
+    }
+    .produto h4{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .produto img{
+        width: 240px;
+        height: 280px;
+        
+    }
+    .produto button{
+        width: 130px;
+        margin-left: 60px;
+        margin-top: 15px;
+    }
+    .descrição{
+        height: 455px;
+    }
+    .contact button{
+        margin-left: 480px;
+    }
+    .contact h1{
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .contact form{
+        margin-left: 180px;
+        margin-right: 180px;
+        margin-top: 80px;
+    }
+    .contact h2{
+        margin-right: 550px;
+    }
+    
+}
+
+@media (max-width:950px){
+    .menu{
+        margin-left: 280px;
+    }
+    .title{
+        padding-top: 255px;
+        padding-left: 140px;
+        padding-bottom: 142px;
+    }
+    .title h1{
+        margin-right: 340px;
+    }
+    .about{
+        padding-bottom: 70px;
+    }
+    .about h1{
+        margin-right: 650px;
+    }
+    .about p{
+        width: 500px;
+    }
+    .about img{
+        width: 300px;
+        height: 430px;
+        margin-left: 590px; 
+    }
+    .products h1{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    .products{
+        padding-bottom: 80px;
+    }
+    .produtos{
+        margin-top: 100px;
+        margin-left: 200px;
+        margin-right:200px;
+        display: block;
+    }
+    .produto{
+        width: 500px;
+        margin-bottom: 60px;
+    }
+    .produto h4{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .produto img{
+        width: 495px;
+        height: 330px;
+        
+    }
+    .produto button{
+        width: 180px;
+        margin-left: 150px;
+        margin-top: 15px;
+    }
+    .descrição{
+        height: 240px;
+    }
+    .contact img{
+        width: 98vw;
+    }
+    .contact button{
+        margin-left: 400px;
+    }
+    .contact h1{
+        margin-left: 320px;
+        margin-right: 320px;
+    }
+    .contact form{
+        margin-left: 180px;
+        margin-right: 180px;
+        margin-top: 80px;
+    }
+    .contact h2{
+        margin-right: 420px;
+    }
+    .img img{
+        margin-left: 385px;
+        margin-top: -75px;
+    }
+    .adress{
+        width: 300px;
+        margin-left: 80px;
+        border-left: none;
+        margin-top: 70px;
+    }
+    .footer{
+        border-left: 2px solid;
+        margin-left: 80px;
+        margin-top: 70px;
+        border-right: 2px solid;
+        margin-right: 80px;
+    }
+    .footer2{
+        margin-top: 20px;
+        border-left: 2px solid;
+        margin-left: 80px;
+        border-right: 2px solid;
+        margin-right: 80px;
+    }
+    .time{
+        width: 300px;
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 150px;
+        border: none;
+        margin-top: 110px;
+    }
+    .social{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 80px;
+        height: 150px;
+    }
+    .social img{
+        width: 40px;
+        margin-bottom: 5px;
+        height: 40px;
+        margin-right: 25px;
+    }
+    .navegue{
+        position: relative;
+        width: 80px;
+        margin-left: 80px;
+        margin-top: 50px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:900px){
+    .menu{
+        margin-left: 230px;
+    }
+    .title{
+        padding-top: 255px;
+        padding-left: 140px;
+        padding-bottom: 142px;
+    }
+    .title h1{
+        margin-right: 320px;
+    }
+    .about{
+        padding-bottom: 100px;
+    }
+    .about h1{
+        margin-right: 620px;
+    }
+    .about p{
+        width: 500px;
+    }
+    .about img{
+        width: 280px;
+        height: 410px;
+        margin-left: 570px; 
+    }
+    .products h1{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+    .products{
+        padding-bottom: 80px;
+    }
+    .produtos{
+        margin-top: 100px;
+        margin-left: 200px;
+        margin-right:200px;
+        display: block;
+    }
+    .produto{
+        width: 500px;
+        margin-bottom: 60px;
+    }
+    .produto h4{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .produto img{
+        width: 495px;
+        height: 330px;
+        
+    }
+    .produto button{
+        width: 180px;
+        margin-left: 150px;
+        margin-top: 15px;
+    }
+    .descrição{
+        height: 240px;
+    }
+    .contact img{
+        width: 98vw;
+    }
+    .contact button{
+        margin-left: 380px;
+    }
+    .contact h1{
+        margin-left: 320px;
+        margin-right: 320px;
+    }
+    .contact form{
+        margin-left: 180px;
+        margin-right: 180px;
+        margin-top: 80px;
+    }
+    .contact h2{
+        margin-right: 370px;
+    }
+    .img img{
+        margin-left: 365px;
+        margin-top: -75px;
+    }
+    .adress{
+        width: 300px;
+        margin-left: 80px;
+        border-left: none;
+        margin-top: 70px;
+    }
+    .footer{
+        border-left: 2px solid;
+        margin-left: 80px;
+        margin-top: 70px;
+        border-right: 2px solid;
+        margin-right: 80px;
+    }
+    .footer2{
+        margin-top: 20px;
+        border-left: 2px solid;
+        margin-left: 80px;
+        border-right: 2px solid;
+        margin-right: 80px;
+    }
+    .time{
+        width: 300px;
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 150px;
+        border: none;
+        margin-top: 110px;
+    }
+    .social{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 80px;
+        height: 150px;
+    }
+    .social img{
+        width: 40px;
+        margin-bottom: 5px;
+        height: 40px;
+        margin-right: 25px;
+    }
+    .navegue{
+        position: relative;
+        width: 80px;
+        margin-left: 80px;
+        margin-top: 50px;
+        height: 150px;
+        margin-bottom: 20px;
+     }
+     .dedi{
+        margin-top: 30px;
+     }
+}
+
+@media (max-width:800px){
+    .menu{
+        margin-left: 180px;
+        margin-right: 20px;
+    }
+    .menu span{
+        margin-right: 5px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .title{
+        padding-top: 205px;
+        padding-left: 120px;
+        padding-bottom: 200px;
+    }
+    .title h1{
+        margin-right: 210px;
+    }
+    .about{
+        padding-bottom: 100px;
+    }
+    .about h1{
+        margin-right: 510px;
+    }
+    .about p{
+        width: 700px;
+    }
+    .about img{
+        width: 550px;
+        height: 510px;
+        margin-left: 110px; 
+        margin-top: 80px;
+    }
+    .products h1{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .products{
+        padding-bottom: 80px;
+    }
+    .produtos{
+        margin-top: 100px;
+        margin-left: 130px;
+        margin-right:130px;
+        display: block;
+    }
+    .produto{
+        width: 500px;
+        margin-bottom: 60px;
+    }
+    .produto h4{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .produto img{
+        width: 495px;
+        height: 330px;
+        
+    }
+    .produto button{
+        width: 180px;
+        margin-left: 150px;
+        margin-top: 15px;
+    }
+    .descrição{
+        height: 240px;
+    }
+    .contact img{
+        width: 97.5vw;
+        height: 75vh;
+    }
+    .contact button{
+        margin-left: 340px;
+    }
+    .contact h1{
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+    .contact form{
+        margin-left: 180px;
+        margin-right: 180px;
+        margin-top: 80px;
+    }
+    .contact h2{
+        margin-right: 270px;
+    }
+    .img img{
+        margin-left: 325px;
+        margin-top: -75px;
+    }
+    .adress{
+        width: 300px;
+        margin-left: 80px;
+        border-left: none;
+        margin-top: 30px;
+    }
+    .footer{
+        border-left: 2px solid;
+        margin-left: 80px;
+        margin-top: 100px;
+        border-right: 2px solid;
+        margin-right: 80px;
+    }
+    .footer2{
+        margin-top: 20px;
+        border-left: 2px solid;
+        margin-left: 80px;
+        border-right: 2px solid;
+        margin-right: 80px;
+    }
+    .time{
+        width: 300px;
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 150px;
+        border: none;
+        margin-top: 70px;
+    }
+    .social{
+        width: 300px;
+        margin-top: 60px;
+        margin-left: 80px;
+        height: 150px;
+    }
+    .social img{
+        width: 40px;
+        margin-bottom: 5px;
+        height: 40px;
+        margin-right: 25px;
+    }
+    .navegue{
+        position: relative;
+        width: 80px;
+        margin-left: 80px;
+        margin-top: 80px;
+        height: 150px;
+        margin-bottom: 20px;
+     }
+     .dedi{
+        margin-top: 30px;
+     }
+}
+
+@media (max-width:555px){
+    .menu{
+        margin-left: 125px;
+        margin-right: 5px;
+    }
+    header{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .menu span{
+        margin-right: 3px;
+        font-size: 16px;
+    }
+    .logo span{
+        font-size: 16px;
+    }
+    .title{
+        padding-top: 200px;
+        padding-left: 30px;
+        padding-bottom: 110px;
+    }
+    .inicio{
+        min-height: 80vh;
+    }
+    .title h1{
+        margin-right: 120px;
+        font-size: 75px;
+    }
+    .about{
+        padding-bottom: 100px;
+    }
+    .about h1{
+        margin-right: 230px;
+        margin-left: 30px;
+    }
+    .about p{
+        width: 450px;
+        margin-left: 30px;
+    }
+    .about img{
+        width: 450px;
+        height: 480px;
+        margin-left: 40px; 
+        margin-top: 50px;
+    }
+    .products h1{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    .products{
+        padding-bottom: 30px;
+    }
+    .produtos{
+        margin-top: 80px;
+        margin-left: 120px;
+        margin-right: 120px;
+        display: block;
+    }
+    .produto{
+        width: 300px;
+        margin-bottom: 80px;
+    }
+    .produto h4{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .produto img{
+        width: 295px;
+        height: 270px;
+        
+    }
+    .produto button{
+        width: 160px;
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+    .descrição{
+        height: 360px;
+    }
+    .contact img{
+        width: 96.8vw;
+        height: 60vh;
+    }
+    .contact button{
+        margin-left: 200px;
+    }
+    .contact h1{
+        margin-left: 170px;
+        margin-right: 170px;
+    }
+    .contact p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contact form{
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 80px;
+    }
+    .contact h2{
+        margin-right: 190px;
+    }
+    .img img{
+        margin-left: 185px;
+        margin-top: -75px;
+        height: 150px;
+    }
+    .adress{
+        width: 150px;
+        margin-left: 40px;
+        border-left: none;
+        margin-top: 30px;
+    }
+    .footer{
+        border-left: 2px solid;
+        margin-left: 40px;
+        margin-top: 100px;
+        border-right: 2px solid;
+        margin-right: 40px;
+    }
+    .footer2{
+        margin-top: 20px;
+        border-left: 2px solid;
+        margin-left: 40px;
+        border-right: 2px solid;
+        margin-right: 40px;
+    }
+    .time{
+        width: 150px;
+        margin-left: 90px;
+        margin-right: 90px;
+        height: 150px;
+        border: none;
+        margin-top: 70px;
+    }
+    .social{
+        width: 200px;
+        margin-top: 60px;
+        margin-left: 30px;
+        height: 150px;
+    }
+    .social img{
+        width: 40px;
+        margin-bottom: 5px;
+        height: 40px;
+        margin-right: 25px;
+    }
+    .navegue{
+        position: relative;
+        width: 80px;
+        margin-left: 80px;
+        margin-top: 80px;
+        height: 150px;
+        margin-bottom: 20px;
+     }
+     .dedi{
+        margin-top: 30px;
+     }
+}
+
+@media (max-width:505px){
+    .menu{
+        margin-left: 115px;
+        margin-right: 5px;
+    }
+    header{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .menu span{
+        margin-right: 3px;
+        font-size: 14px;
+    }
+    .logo span{
+        font-size: 16px;
+    }
+    .title{
+        padding-top: 200px;
+        padding-left: 30px;
+        padding-bottom: 110px;
+    }
+    .inicio{
+        min-height: 80vh;
+    }
+    .title h1{
+        margin-right: 50px;
+        font-size: 75px;
+    }
+    .about{
+        padding-bottom: 100px;
+    }
+    .about h1{
+        margin-right: 230px;
+        margin-left: 30px;
+    }
+    .about p{
+        width: 400px;
+        margin-left: 30px;
+    }
+    .about img{
+        width: 400px;
+        height: 430px;
+        margin-left: 40px; 
+        margin-top: 50px;
+    }
+    .products h1{
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    .products{
+        padding-bottom: 30px;
+    }
+    .produtos{
+        margin-top: 80px;
+        margin-left: 80px;
+        margin-right: 80px;
+        display: block;
+    }
+    .produto{
+        width: 300px;
+        margin-bottom: 80px;
+    }
+    .produto h4{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .produto img{
+        width: 295px;
+        height: 270px;
+        
+    }
+    .produto button{
+        width: 160px;
+        margin-left: 70px;
+        margin-top: 15px;
+    }
+    .descrição{
+        height: 360px;
+    }
+    .contact img{
+        width: 96.2vw;
+        height: 60vh;
+    }
+    .contact button{
+        margin-left: 180px;
+    }
+    .contact h1{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    .contact p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contact form{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 60px;
+    }
+    .contact h2{
+        margin-right: 110px;
+    }
+    .img img{
+        margin-left: 175px;
+        margin-top: -65px;
+        height: 130px;
+    }
+    .adress{
+        width: 100px;
+        margin-left: 40px;
+        border-left: none;
+        margin-top: 30px;
+    }
+    .footer{
+        border-left: 2px solid;
+        margin-left: 40px;
+        margin-top: 100px;
+        border-right: 2px solid;
+        margin-right: 40px;
+    }
+    .footer2{
+        margin-top: 20px;
+        border-left: 2px solid;
+        margin-left: 40px;
+        border-right: 2px solid;
+        margin-right: 40px;
+    }
+    .time{
+        width: 150px;
+        margin-left: 90px;
+        margin-right: 90px;
+        height: 150px;
+        border: none;
+        margin-top: 70px;
+    }
+    .social{
+        width: 160px;
+        margin-top: 60px;
+        margin-left: 30px;
+        padding-left:30px;
+        height: 150px;
+    }
+    .social img{
+        width: 40px;
+        margin-bottom: 5px;
+        height: 40px;
+        margin-right: 0px;
+    }
+    .navegue{
+        position: relative;
+        width: 80px;
+        margin-left: 80px;
+        margin-top: 80px;
+        height: 150px;
+        margin-bottom: 20px;
+     }
+     .dedi{
+        margin-top: 30px;
+     }
+}
